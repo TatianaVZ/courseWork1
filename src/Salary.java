@@ -2,6 +2,7 @@ public class Salary {
 
     public Name[] name = new Name[5];
 
+
     public double totalSum(Name[] name) {
         double sum = 0;
         for (int i = 0; i < name.length; i++) {
@@ -41,7 +42,7 @@ public class Salary {
     public double averageSum(Name[] name) {
         double sum = 0;
         double averageSum = 0;
-                for (int i = 0; i < name.length; i++) {
+        for (int i = 0; i < name.length; i++) {
             if (name[i] != null) {
                 sum += name[i].getSalary();
                 averageSum = sum / 5;
@@ -49,7 +50,7 @@ public class Salary {
         }
         return averageSum;
     }
-    }
+}
 
 
 

@@ -9,6 +9,7 @@ public class Main {
         name[4] = new Name("Борисов", "Борис", "Борисович", 95000);
         for (Name i : name) {
             System.out.println(i);
+
         }
 
         {

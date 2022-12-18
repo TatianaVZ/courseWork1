@@ -47,7 +47,7 @@ public class Name {
 
     @Override
     public String toString() {
-        return "ФИО: " + surname + "," + name+ "," + patronymic+ ", зарплата " + salary+ " руб." ;
+        return "ФИО: " + surname + "," + name + "," + patronymic + ", зарплата: " + salary + " руб.";
     }
 
     @Override
