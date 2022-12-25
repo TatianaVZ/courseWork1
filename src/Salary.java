@@ -1,56 +1,57 @@
 public class Salary {
 
-    public Name[] name = new Name[5];
+    public Employee[] employee = new Employee[5];
 
-    public double totalSum(Name[] name) {
+
+    public double totalSum(Employee[] employee) {
         double sum = 0;
-        for (int i = 0; i < name.length; i++) {
-            if (name[i] != null) {
-                sum += name[i].getSalary();
+        for (int i = 0; i < employee.length; i++) {
+            if (employee[i] != null) {
+                sum += employee[i].getSalary();
             }
         }
         return sum;
     }
 
-    public double maxSalary(Name[] name) {
+    public double maxSalary(Employee[] employee) {
         int max = 0;
-        for (int i = 0; i < name.length; i++) {
-            if (name[i] != null) {
+        for (int i = 0; i < employee.length; i++) {
+            if (employee[i] != null) {
 
-                if (max < name[i].getSalary()) {
-                    max = name[i].getSalary();
+                if (max < employee[i].getSalary()) {
+                    max = employee[i].getSalary();
                 }
             }
         }
         return max;
     }
 
-    public double minSalary(Name[] name) {
+    public double minSalary(Employee[] employee) {
         int min = 95000;
-        for (int i = 0; i < name.length; i++) {
-            if (name[i] != null) {
+        for (int i = 0; i < employee.length; i++) {
+            if (employee[i] != null) {
 
-                if (min > name[i].getSalary()) {
-                    min = name[i].getSalary();
+                if (min > employee[i].getSalary()) {
+                    min = employee[i].getSalary();
                 }
             }
         }
         return min;
     }
 
-    public double averageSum(Name[] name) {
+    public double averageSum(Employee[] employee) {
         double sum = 0;
-        double averageSum = 0;
-                for (int i = 0; i < name.length; i++) {
-            if (name[i] != null) {
-                sum += name[i].getSalary();
-                averageSum = sum / 5;
+        double counter = 0;
+
+        for (int i = 0; i < employee.length; i++) {
+            if (employee[i] != null) {
+                sum += employee[i].getSalary();
+                counter++;
             }
         }
-        return averageSum;
+        return sum / counter;
     }
-    }
-
+}
 
 
 
