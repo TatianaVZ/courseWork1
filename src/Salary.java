@@ -41,18 +41,17 @@ public class Salary {
 
     public double averageSum(Employee[] employee) {
         double sum = 0;
-        double averageSum = 0;
+        double counter = 0;
 
         for (int i = 0; i < employee.length; i++) {
             if (employee[i] != null) {
                 sum += employee[i].getSalary();
-                averageSum = sum / i;
+                counter++;
             }
         }
-        return averageSum;
+        return sum / counter;
     }
 }
-
 
 
 
